@@ -28,12 +28,14 @@ public class LoggerTest implements SysoutCaptureAndAssertionAbility {
         Logger.log(1);
         Logger.log(0);
         Logger.log(-1);
+        Logger.print();
         //endregion
 
         //region then
         assertSysoutContains("primitive: ");
-        assertSysoutEquals("primitive: 1" + System.lineSeparator() +
-                "primitive: 0" + System.lineSeparator() + "primitive: -1" + System.lineSeparator());
+        assertSysoutEquals("primitive: 0" + System.lineSeparator());
+//        assertSysoutEquals("primitive: 1" + System.lineSeparator() +
+//                "primitive: 0" + System.lineSeparator() + "primitive: -1" + System.lineSeparator());
 
         //endregion
     }
