@@ -9,7 +9,8 @@ public class ThreadsDemo {
                 = Executors.newFixedThreadPool(4);
 
         pool.execute(() -> {
-            while(!interr) {
+          //  while(!interr)
+            {
 
             }
         });
