@@ -18,7 +18,7 @@ public class VarargsDemo {
     private static void m2(int... param) {
         System.out.println(param[0]);
         for (int current : param) {
-
+            System.out.println(param[current]);
         }
     }
 
